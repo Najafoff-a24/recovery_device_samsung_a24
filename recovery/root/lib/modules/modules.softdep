@@ -1,0 +1,3 @@
+# Soft dependencies extracted from modules themselves.
+softdep mt6789_dcm pre:mtk_dcm.ko
+softdep mcd_panel pre: s2dos05-regulator i2c-exynos5
