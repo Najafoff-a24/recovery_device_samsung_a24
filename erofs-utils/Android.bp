@@ -159,20 +159,12 @@ cc_defaults {
 }
 
 cc_binary {
-    name: "mkfs.erofs-dt",
-    stem: "mkfs.erofs",
-
-    defaults: ["mkfs-erofs_defaults-dt"],
-    host_supported: true,
-    recovery_available: true,
-}
-
-cc_binary_host {
     name: "make_erofs-dt",
     stem: "make_erofs",
 
     defaults: ["mkfs-erofs_defaults-dt"],
-    stl: "libc++_static"
+    host_supported: true,
+    recovery_available: true,
 }
 
 cc_binary {

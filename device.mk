@@ -47,7 +47,6 @@ PRODUCT_PACKAGES += \
 # erofs utils
 PRODUCT_HOST_PACKAGES += \
     liberofs-dt \
-    mkfs.erofs-dt \
     make_erofs-dt \
     dump.erofs-dt \
     fsck.erofs-dt
