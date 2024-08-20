@@ -176,7 +176,7 @@ TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 
 # Device
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
-TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone39/temp"
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone22/temp"
 TW_BACKUP_EXCLUSIONS := /data/fonts
 TW_MAX_BRIGHTNESS := 400
 TW_DEFAULT_BRIGHTNESS := 200
