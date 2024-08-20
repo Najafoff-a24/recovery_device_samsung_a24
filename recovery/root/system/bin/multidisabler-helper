@@ -1,6 +1,6 @@
 #!/system/bin/sh
 #
-# Samsung Galaxy A24 4G
+# Samsung Galaxy A24 
 #
 
 R_LOG="/tmp/recovery.log"

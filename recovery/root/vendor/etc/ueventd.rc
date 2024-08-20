@@ -58,6 +58,7 @@
 /dev/wmtWifi              0660   wifi     wifi
 /dev/fw_log_wifi          0660   wifi     wifi
 /dev/fw_log_wifi_write_log_to_file     0660    wifi    wifi
+/dev/sa_log_wifi          0660   wifi     wifi
 
 # FMRadio
 /dev/fm                   0660   system     audio
@@ -150,7 +151,7 @@
 /dev/pvr_sync             0666   root       root
 
 # CIQ IQI node
-/dev/ccci_ciq             0660   system     bridge_rw
+/dev/ccci_ciq             0660   system     system_ext_bridge_rw
 
 # S-RIL
 /dev/umts_*               0660   system      radio

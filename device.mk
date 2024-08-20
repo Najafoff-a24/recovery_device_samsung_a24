@@ -11,14 +11,9 @@ AB_OTA_POSTINSTALL_CONFIG += \
 ENABLE_VIRTUAL_AB := true
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
-# Boot control HAL
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-service \
-    android.hardware.boot@1.2-mtkimpl \
-    android.hardware.boot@1.2-mtkimpl.recovery
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 PRODUCT_PACKAGES_DEBUG += \
-    bootctrl \
     update_engine_client
 
 PRODUCT_PACKAGES += \
@@ -49,13 +44,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     shrink
 
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.product.system.model \
-    ro.product.vendor.model \
-    ro.product.odm.model \
-    ro.product.model \
-    ro.product.product.model \
-    ro.product.system_ext.model
+# erofs utils
+PRODUCT_HOST_PACKAGES += \
+    liberofs-dt \
+    mkfs.erofs-dt \
+    make_erofs-dt \
+    dump.erofs-dt \
+    fsck.erofs-dt
 
 # Health HAL
 PRODUCT_PACKAGES += \
