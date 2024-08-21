@@ -144,6 +144,7 @@ TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+TW_USE_NEW_MINADBD := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_DEVICE_VERSION := $(shell date '+%Y%m%d')-a24
 TW_NO_LEGACY_PROPS := true
