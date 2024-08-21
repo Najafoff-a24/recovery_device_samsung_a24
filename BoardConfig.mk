@@ -60,8 +60,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_CMDLINE := \
         bootopt=64S3,32N2,64N2 \
         loop.max_part=7 \
-        androidboot.selinux=permissive \
-        androidboot.force_normal_boot=1
+        androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS += \
         --header_version $(BOARD_BOOTIMG_HEADER_VERSION) \
         --ramdisk_offset $(BOARD_RAMDISK_OFFSET) \
