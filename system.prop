@@ -2,8 +2,11 @@
 ro.mediatek.platform=MT6789
 ro.hardware=mt6789
 
-# USB and MTP stuff 
-persist.sys.usb.config=mtp 
+# USB and MTP stuff
+ro.secure=0
+ro.adb.secure=0
+ro.debuggable=1
+persist.sys.usb.config=mtp,adb
 sys.usb.controller=musb-hdrc 
 
 # Encryption
